@@ -1,0 +1,10 @@
+const router = require("express").Router()
+const authRoutes = require("./auth.route")
+const userRoutes = require("./user.routes")
+const postRoutes = require("./post.route")
+const notificationRoutes = require("./notification.route")
+router.use("/auth", authRoutes)
+router.use("/user", userRoutes)
+router.use("/post",postRoutes)
+router.use("/notification",notificationRoutes)
+module.exports = router
